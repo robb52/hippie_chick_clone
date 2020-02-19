@@ -61,8 +61,8 @@
   --clr-accent: #613b6b;
 
   --ff-title: 'Handlee', cursive;
-  --ff-serif: "Crimson Text", serif;
-  --ff-logo: "Sedgwick Ave", cursive;
+  --ff-serif: 'Crimson Text', serif;
+  --ff-logo: 'Sedgwick Ave', cursive;
 }
 
 *,
@@ -113,6 +113,7 @@ h2 {
 
 p {
   margin-bottom: 0.85em;
+  font-weight: 400;
 }
 
 .section-title-small {
@@ -163,6 +164,25 @@ nav a:focus {
   text-decoration: underline;
 }
 
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.btn {
+  padding: .75em 2.5em;
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: .5em 0;
+  border-radius: .25em;
+}
+
+.btn-primary {
+  background: var(--clr-primary);
+}
+
 .hero {
   background-color: #444;
   background-image: url(../images/Hippie-Chick-Monkey.jpg);
@@ -193,6 +213,36 @@ nav a:focus {
   padding: 1em 1em 2em;
 }
 
+.order-online {
+  background: #f0f0f0;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+}
+
+.product {
+  padding: 1em;
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+}
+
+.product__content {
+  padding: 1.5em;
+}
+
+.product__title {
+  color: var(--clr-primary);
+  font-size: 2.5em;
+  margin-bottom: .5em;
+}
+
+.fineprint {
+  font-size: .75rem;
+  color: rgba(0, 0, 0, 0.85);
+}
 
 
 
