@@ -1,17 +1,14 @@
-
-
+@import url('https://fonts.googleapis.com/css?family=Handlee:400&display=swap');
 
 
 @font-face {
-  font-family: "BetterFly";
-  src: url("../fonts/betterfly-draft-webfont.woff2") format("woff2"),
-    url("../fonts/betterfly-draft-webfont.woff") format("woff");
+  font-family: 'Sedgwick Ave';
+  src: url('https://fonts.googleapis.com/css?family=Sedgwick+Ave&display=swap') format('woff2'),
 }
 
 @font-face {
-  font-family: "BFNarrow";
-  src: url("../fonts/betterfly-narrow-webfont.woff2") format("woff2"),
-    url("../fonts/betterfly-narrow-webfont.woff") format("woff"),
+  font-family: 'Handlee';
+  src: url('https://fonts.googleapis.com/css?family=Handlee:400&display=swap') format("woff2"),
 }
 
 @font-face {
@@ -41,7 +38,7 @@
   font-style: normal;
   font-weight: 400;
   src: local("Crimson Text Regular"), local("CrimsonText-Regular")
-    url("https://fonts.gstatic.com/s/crimsontext/v8/wlp2gwHKFZgtmSR3NB0oRJfbwhTIfFd3A.woff2") 
+    url('https://fonts.gstatic.com/s/crimsontext/v8/wlp2gwHKFZgtmSR3NB0oRJfbwhTIfFd3A.woff2') 
     format("woff2");
   unicode-range: U+000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, 
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -52,7 +49,7 @@
   font-style: normal;
   font-weight: 700;
   src: local("Crimson Text Bold"), local("CrimsonText-Bold")
-    url("https://fonts.gstatic.com/s/crimsontext/v8/wlppgwHKFZgtmSR3NB0oRJX1C1GDNNQ9rJPfw.woff2") 
+    url('https://fonts.gstatic.com/s/crimsontext/v8/wlppgwHKFkZgtmSR3NB0oRJX1C1GDNNQ9rJPfw.woff2')
     format("woff2");
   unicode-range: U+000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, 
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -61,11 +58,11 @@
 :root {
   --clr-text: #3d3d3d;
   --clr-primary: #067e0a;
-  --clr-accent: #764981;
+  --clr-accent: #613b6b;
 
-  --ff-title: "BFNarrow", sans-serif;
+  --ff-title: 'Handlee', cursive;
   --ff-serif: "Crimson Text", serif;
-  --ff-logo: "BetterFly", sans-serif;
+  --ff-logo: "Sedgwick Ave", cursive;
 }
 
 *,
@@ -78,16 +75,123 @@ html {
   box-sizing: border-box;
   font-family: var(--ff-serif);
   color: var(--clr-text);
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  padding: 3em 1em;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+p {
+  margin: 0;
 }
 
 h2,
 h3 {
   font-family: var(--ff-title);
-  line-height: 1;
+  line-height: 0.8;
+  letter-spacing: 1px;
 }
 
+h2 {
+  font-size: 4rem;
+}
 
+p {
+  margin-bottom: 0.85em;
+}
+
+.section-title-small {
+  font-size: 3rem;
+}
+
+.section-title-small small {
+  font-size: .7em;
+  display: block;
+}
+
+.text-primary {
+  color: var(--clr-primary);
+}
+
+.logo {
+  font-family: var(--ff-logo);
+  text-align: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  padding: 1em 0 2em;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5em;
+  color: var(--clr-primary);
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--clr-accent);
+  text-decoration: underline;
+}
+
+.hero {
+  background-color: #444;
+  background-image: url(../images/Hippie-Chick-Monkey.jpg);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 15vh 1em;
+}
+
+.about-us {
+  color: white;
+  background: var(--clr-accent);
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us_intro {
+  padding-left: 3em 1em 1.5em;
+  background-color: var(--clr-accent);
+  background-image: url(../images/Hippie-Granola.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.about-us_body {
+  padding: 1em 1em 2em;
+}
 
 
 
