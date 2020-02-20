@@ -247,6 +247,7 @@ nav a:focus {
   border-radius: 1em;
   overflow: hidden;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+  margin-bottom: 2em;
 }
 
 .product__content {
@@ -263,6 +264,47 @@ nav a:focus {
   font-size: .75rem;
   color: rgba(0, 0, 0, 0.85);
 }
+
+footer {
+  background: var(--clr-accent-dark);
+  padding: 3em 1em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+footer a {
+  color: inherit;
+}
+
+.footer-nav,
+.footer-social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav a {
+  padding: .75em;
+  text-decoration: none;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+  text-decoration: underline;
+}
+
+img.social-link {
+  display: inline-block;
+}
+
+img.social-icon {
+  width: 50px;
+  margin-bottom: .5em;
+}
+
+
 
 
 
