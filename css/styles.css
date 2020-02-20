@@ -58,7 +58,9 @@
 :root {
   --clr-text: #3d3d3d;
   --clr-primary: #067e0a;
+  --clr-primary-dark: #125814;
   --clr-accent: #613b6b;
+  --clr-accent-dark: #44264d;
 
   --ff-title: 'Handlee', cursive;
   --ff-serif: 'Crimson Text', serif;
@@ -90,6 +92,10 @@ img {
 
 section {
   padding: 3em 1em;
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }
 
 h1, 
@@ -181,6 +187,20 @@ nav a:focus {
 
 .btn-primary {
   background: var(--clr-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: var(--clr-primary-dark);
+}
+
+.btn-accent {
+  background: var(--clr-accent);
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background: var(--clr-accent-dark);
 }
 
 .hero {
