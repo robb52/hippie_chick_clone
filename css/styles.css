@@ -122,6 +122,10 @@ p {
   font-weight: 400;
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+
 .section-title-small {
   font-size: 3rem;
 }
@@ -173,6 +177,7 @@ nav a:focus {
 .btn-group {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -240,6 +245,8 @@ nav a:focus {
 .products {
   display: flex;
   flex-direction: column;
+  max-width: 30em;
+  margin: 0 auto;
 }
 
 .product {
@@ -271,6 +278,7 @@ footer {
   color: white;
   display: flex;
   justify-content: center;
+  gap: 5em;
   margin-top: 3em;
 }
 
@@ -304,6 +312,81 @@ img.social-icon {
   margin-bottom: .5em;
 }
 
+@media only screen and (min-width: 750px) {
+  section {
+    padding: 6em 1em;
+  }
+
+  .btn-group {
+    margin-top: 1em;
+    flex-direction: row;
+  }
+
+  .btn + .btn {
+    margin-left: 0.5em;
+  }
+
+  .about-us {
+    flex-direction: row;
+  }
+
+  .about-us_intro,
+  .about-us_body {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 4em 2em;
+    justify-content: center;
+  }
+
+  .about-us_intro {
+    text-align: right;
+  }
+
+  .about-us_intro {
+    max-width: 30em;
+    margin-left: auto;
+  }
+
+  .about-us_body {
+    text-align: left;
+  }
+
+  .about-us_body {
+    max-width: 30em;
+    margin-right: auto;
+  }
+
+  .order-online > * {
+    max-width: 70ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .order-online {
+    display: grid;
+  }
+
+  .products {
+    flex-direction: row;
+    max-width: 1200px;
+    padding: 0 5em; 
+  }
+
+  .product {
+    margin: 0;
+    flex: 0 1 33%;
+  }
+
+  .product + .product {
+    margin-left: 1em;
+  }
+
+  .product:last-of-type {
+    margin-bottom: 0;
+  }
+
+}
 
 
 
